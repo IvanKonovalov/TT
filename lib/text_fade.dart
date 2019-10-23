@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class TextFade extends StatefulWidget {
   @override
-  createState() => TextFadeState();
+  TextFadeState createState() => TextFadeState();
 }
 
 class TextFadeState extends State<TextFade>
