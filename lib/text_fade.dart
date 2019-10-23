@@ -33,34 +33,37 @@ class TextFadeState extends State<TextFade>
   Widget build(BuildContext context) {
     _controller.forward();
     return new FadeTransition(
-        opacity: _animation, child:
-        new Column(
+        opacity: _animation,
+        child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Text('Hey', style: TextStyle(
-              //TODO orientation
-              fontWeight: FontWeight.bold,
-              fontFamily: 'segoe script ',
-              letterSpacing: 2.0,
-              shadows: [
-                Shadow(
-                  blurRadius: 13.0,
-                  color: Colors.purple,
-                  offset: Offset(5.0, 5.0),
-                ),
-              ],
-            )),
-            new Text('there', style: TextStyle(
-              shadows: [
-                Shadow(
-                  blurRadius: 13.0,
-                  color: Colors.purple,
-                  offset: Offset(5.0, 5.0),
-                ),
-              ],
-            ),)
+            new Text('Hey',
+                style: TextStyle(
+                  //TODO orientation
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'segoe script ',
+                  letterSpacing: 2.0,
+                  shadows: [
+                    Shadow(
+                      blurRadius: 13.0,
+                      color: Colors.purple,
+                      offset: Offset(5.0, 5.0),
+                    ),
+                  ],
+                )),
+            new Text(
+              'there',
+              style: TextStyle(
+                shadows: [
+                  Shadow(
+                    blurRadius: 13.0,
+                    color: Colors.purple,
+                    offset: Offset(5.0, 5.0),
+                  ),
+                ],
+              ),
+            )
           ],
-        )
-    );
+        ));
   }
 }
